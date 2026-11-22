@@ -1,0 +1,9 @@
+MOVEQUEST 网页文件夹版
+
+双击 index.html 打开网页。
+assets/images：图片素材
+assets/css：页面样式
+assets/js：交互脚本
+
+请保留整个文件夹结构，移动或分享时请连同 assets 一起复制。
+此版本与运动探索还原 v23 内容一致。

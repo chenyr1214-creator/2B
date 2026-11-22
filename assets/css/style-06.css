@@ -1,0 +1,39 @@
+
+/* Scope changes to the two interactive body views only. */
+.module-neon .interactive-anatomy .neon-anatomy-body{height:auto;width:100%;aspect-ratio:340/500;max-height:650px;display:block;border-radius:14px;background:#180d29}
+.module-neon .neon-anatomy-body .region-shape{fill:#e875ff;fill-opacity:.035;stroke:#f6a1ff;stroke-opacity:.1;stroke-width:1;cursor:pointer;transition:fill-opacity .15s,stroke-opacity .15s;filter:none}
+.module-neon .neon-anatomy-body .region-shape:hover{fill:#ffb8f4;fill-opacity:.2;stroke:#ffe5fc;stroke-opacity:.8;stroke-width:1.4}
+.module-neon .neon-anatomy-body .region-shape.region-active{fill:#ffa9df;fill-opacity:.25;stroke:#fff0fb;stroke-opacity:.95;stroke-width:1.6;filter:drop-shadow(0 0 4px #ff8cdd)}
+.module-neon .neon-anatomy-body .region-shape:focus-visible{outline:none;fill-opacity:.3;stroke:#fff;stroke-opacity:1;stroke-width:3}
+@media(prefers-reduced-motion:reduce){.module-neon .neon-anatomy-body .region-shape{transition:none}}
+
+/* v20: interaction lies on the anatomy, with no painted boxes or outlines. */
+.module-neon .neon-anatomy-body .region-shape,
+.module-neon .neon-anatomy-body .region-shape:hover,
+.module-neon .neon-anatomy-body .region-shape.region-active,
+.module-neon .neon-anatomy-body .region-shape:focus-visible{
+ fill:transparent;fill-opacity:0;stroke:none;stroke-opacity:0;
+ filter:none;outline:none;cursor:pointer;pointer-events:all;
+}
+.module-neon .neon-anatomy-body .region-shape path{pointer-events:all}
+.module-neon .neon-anatomy-body image{pointer-events:none}
+
+/* v21: soft light follows the muscle surface, never an outlined box. */
+.module-neon .neon-anatomy-body .region-shape{
+ fill:#ff9bdc;fill-opacity:0;stroke:none;stroke-opacity:0;
+ filter:none;transition:fill-opacity .2s ease,filter .2s ease;
+}
+.module-neon .neon-anatomy-body .region-shape.region-active{
+ fill:#ffb4eb;fill-opacity:.17;stroke:none;stroke-opacity:0;
+ filter:drop-shadow(0 0 4px #ff79d7) drop-shadow(0 0 8px #c84dff);
+}
+.module-neon .neon-anatomy-body .region-shape:hover,
+.module-neon .neon-anatomy-body .region-shape:focus-visible{
+ fill:#ffe0f8;fill-opacity:.38;stroke:none;stroke-opacity:0;
+ filter:drop-shadow(0 0 4px #ffb5f1) drop-shadow(0 0 10px #ec65ff);
+ outline:none;
+}
+@media(prefers-reduced-motion:reduce){
+ .module-neon .neon-anatomy-body .region-shape{transition:none}
+}
+

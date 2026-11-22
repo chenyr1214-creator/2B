@@ -1,0 +1,97 @@
+
+/* One proportional scene, with separate touch controls on portrait devices. */
+body.neon-home{margin:0;min-height:100svh;overflow-x:hidden;background:#160c26}
+.neon-world{isolation:isolate;position:relative;display:flex;align-items:center;justify-content:center;width:100%;min-height:100svh;background:transparent}
+.neon-world:before{content:'';position:fixed;inset:-30px;z-index:-1;background:linear-gradient(#180b2455,#180b2488),url('../images/home-clean-labels.webp') center/cover;filter:blur(18px);pointer-events:none}
+.neon-stage{position:relative;flex:none;width:min(100%,191.37056svh);height:auto;min-height:0;max-width:none;aspect-ratio:1508/788;overflow:hidden;container-type:inline-size;box-shadow:0 0 55px #16092377}
+.neon-scene{width:100%;height:100%;object-fit:contain}
+.neon-stage .neon-header{height:10.1%;padding:0 1.7% 0 2.6%;gap:1%}
+.neon-header-exact-logo{width:19cqw;height:auto;max-height:100%;object-fit:contain}
+.neon-brand{min-width:19cqw;margin-right:0}
+.neon-header nav{display:flex;margin-left:auto}
+.neon-stage .neon-portal{position:absolute;display:grid;grid-template-columns:2.35cqw minmax(0,1fr) 1.55cqw;column-gap:.55cqw;min-height:0;padding:.65cqw .8cqw;align-items:center;align-content:center;overflow:hidden;aspect-ratio:auto}
+.neon-stage .portal-gym{left:22.2%;top:33.1%;width:16.8%;height:10.7%}
+.neon-stage .portal-muscle{left:4.6%;top:56%;width:17.4%;height:10.8%}
+.neon-stage .portal-equipment{left:25.9%;top:60.1%;width:14.4%;height:10.5%}
+.neon-stage .portal-move{left:40.3%;top:37.7%;width:17.8%;height:35.2%;align-content:start;padding-top:.85cqw;grid-row:auto}
+.neon-stage .portal-quest{left:68.7%;top:31.8%;width:15.7%;height:11.2%}
+.neon-stage .portal-sport{left:59.1%;top:60.1%;width:16.6%;height:10.6%}
+.neon-stage .portal-guide{left:83.7%;top:43.5%;width:15.4%;height:11.6%;grid-column:auto}
+.neon-stage .neon-portal .neon-icon{width:2.35cqw;font-size:2.65cqw}
+.neon-stage .neon-portal .neon-copy{gap:.3cqw;min-width:0}
+.neon-stage .neon-portal .neon-copy strong{font-size:1.12cqw;line-height:1.3}
+.neon-stage .neon-portal .neon-copy small{font-size:.73cqw;line-height:1.4}
+.neon-stage .neon-portal .neon-arrow{position:static;inset:auto;margin:0;width:1.55cqw;height:1.55cqw;font-size:1.12cqw;align-self:center}
+.mobile-explore{display:none}
+/* Keep the entire scene visible on phones. Accessible touch links supplement it. */
+@media(max-width:700px), (max-aspect-ratio:4/5){
+ .neon-world{display:block;min-height:100svh;padding-bottom:20px}
+ .neon-stage{width:100%;aspect-ratio:1508/788;height:auto;min-height:0}
+ .mobile-explore{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:18px 16px 0;margin:0 auto;max-width:760px}
+ .mobile-explore button{display:grid;grid-template-columns:25px minmax(0,1fr) 18px;align-items:center;gap:9px;min-height:72px;padding:12px 10px;border-radius:16px;border:1px solid #dd77f2;background:linear-gradient(130deg,#53265eeF,#251333f2);color:#fff;box-shadow:inset 0 0 12px #e56cf033,0 0 8px #dc50f033;text-align:left}
+ .mobile-explore strong{font-size:13px;line-height:1.5;overflow-wrap:anywhere}
+ .mobile-explore button>span:first-child{font-size:25px;color:#e99cf8}
+ .mobile-explore button>span:last-child{width:18px;height:18px;border:1px solid #e4a0ef;border-radius:50%;font-size:14px;text-align:center;line-height:16px;color:#edc7fa}
+ .mobile-explore button:last-child{grid-column:1/-1}
+ .mobile-explore button:focus-visible{outline:2px solid #fff;outline-offset:4px}
+}
+/* Responsive child-page layouts without changing their content or diagrams. */
+.survival-neon main{min-width:0}
+.survival-neon :is(.split,.muscle-layout,.passport-columns,.sports-grid,.quest-list){min-width:0}
+.survival-neon :is(input,textarea,select){max-width:100%}
+@media(max-width:900px){
+ .survival-neon .split{grid-template-columns:minmax(0,1fr)}
+ .survival-neon .muscle-layout{grid-template-columns:minmax(0,1fr)}
+ .survival-neon .passport-columns{grid-template-columns:minmax(0,1fr)}
+ .survival-neon .item-list{max-height:260px;overflow:auto}
+ .survival-neon .sports-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .survival-neon .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .survival-neon .sport-step-grid{grid-template-columns:minmax(0,1fr)}
+ .survival-neon .equipment-visual,.survival-neon .animation{width:100%;min-width:0}
+}
+@media(max-width:480px){
+ .survival-neon .sports-grid{grid-template-columns:minmax(0,1fr)}
+ .survival-neon .quest-row{display:flex;flex-wrap:wrap;gap:12px}
+ .survival-neon .quest-row>div{min-width:0;max-width:100%}
+ .survival-neon .actions{flex-wrap:wrap}
+ .survival-neon .actions button{max-width:100%;white-space:normal}
+ .survival-neon svg{max-width:100%;height:auto}
+}
+.neon-stage .portal-equipment .neon-copy strong{font-size:.95cqw}
+.neon-stage .portal-equipment .neon-copy small{font-size:.65cqw}
+html[lang=en] .neon-stage .neon-copy strong{font-size:.92cqw;line-height:1.25}
+html[lang=en] .neon-stage .neon-copy small{font-size:.6cqw;line-height:1.3}
+
+/* v17: continuous full-viewport desktop, no letterbox or blurred filler. */
+@media(min-width:701px) and (min-aspect-ratio:4/5){
+ .neon-world{height:100svh;min-height:0;display:block;overflow:hidden;background:#160c26}
+ .neon-world:before{display:none}
+ .neon-stage{width:100%;height:100%;min-height:0;aspect-ratio:auto;box-shadow:none}
+ .neon-stage>.neon-scene{width:100%;height:100%;object-fit:cover;object-position:center center}
+ .neon-stage .neon-header{top:0;height:5.3vw;min-height:48px;max-height:106px}
+ /* Artwork fills proportionally; each control keeps its own proportions. */
+ .neon-stage .portal-gym{height:auto;aspect-ratio:3/1}
+ .neon-stage .portal-muscle{height:auto;aspect-ratio:3.1/1}
+ .neon-stage .portal-equipment{height:auto;aspect-ratio:2.6/1}
+ .neon-stage .portal-move{height:auto;aspect-ratio:.97/1}
+ .neon-stage .portal-quest{height:auto;aspect-ratio:2.7/1}
+ .neon-stage .portal-sport{height:auto;aspect-ratio:3/1}
+ .neon-stage .portal-guide{height:auto;aspect-ratio:2.55/1}
+}
+@media(min-width:701px) and (min-aspect-ratio:4/5){
+ /* Keep the original scene and its portals in one shared coordinate system.
+    Extend only the reflective floor into any extra viewport height. */
+ .neon-world{height:auto;min-height:100svh;overflow:hidden}
+ .neon-stage{height:max(100svh,52.254642vw);min-height:0}
+ .neon-stage>.neon-scene{top:0;width:100%;height:52.254642vw;object-fit:contain}
+ .neon-stage:after{content:'';position:absolute;left:0;right:0;top:52.254642vw;bottom:0;z-index:-2;pointer-events:none;background:url('../images/home-clean-labels.webp') center bottom/100% auto no-repeat;transform:scaleY(-1)}
+ .neon-stage .portal-gym{top:17.296286cqw}
+ .neon-stage .portal-muscle{top:29.2626cqw}
+ .neon-stage .portal-equipment{top:31.40404cqw}
+ .neon-stage .portal-move{top:19.699999cqw}
+ .neon-stage .portal-quest{top:16.617cqw}
+ .neon-stage .portal-sport{top:31.40404cqw}
+ .neon-stage .portal-guide{top:22.73077cqw}
+ .neon-stage .neon-passport{top:29.3671cqw;height:6.53183cqw}
+}
+

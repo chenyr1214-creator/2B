@@ -1,0 +1,28 @@
+
+.mq-quest-scenic{position:relative;isolation:isolate;min-width:0}
+.mq-quest-scenic .page-title h1{text-shadow:0 0 18px #e795ff88}
+.module-neon .mq-quest-scenic .quest-banner{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:18px 28px;margin:0 0 18px;border:1px solid #df8cfa;border-radius:20px;background:radial-gradient(ellipse at 5% 0,#ad42d241,transparent 65%),linear-gradient(115deg,#321445ee,#1b102cee);box-shadow:inset 0 0 20px #b748d540,0 0 8px #f0a4ff88,0 0 28px #a92cce33}
+.mq-quest-scenic .quest-banner h2{display:flex;align-items:baseline;gap:8px;flex:none;font-size:46px;line-height:1;margin:0;padding-right:30px;border-right:1px solid #a65bc1;color:#fff;text-shadow:0 0 14px #efafff77}
+.mq-quest-scenic .quest-banner h2 small{font-size:15px;line-height:1.5;white-space:nowrap}
+.mq-quest-scenic .quest-banner p{max-width:720px;font-size:12px;line-height:1.8;margin:0;color:#e3c9ef}
+.mq-quest-scenic>.actions.filters{gap:10px;margin:0 0 22px}
+.mq-quest-scenic>.actions.filters button{border:1px solid #a45cbd;background:linear-gradient(130deg,#361447,#20112f);border-radius:11px;color:#eddbf6;padding:9px 21px;font-size:13px}
+.mq-quest-scenic>.actions.filters button.primary{background:linear-gradient(135deg,#af4cc9,#622785);border-color:#efb0ff;box-shadow:inset 0 0 13px #ee9bff66,0 0 12px #d757ed88;color:#fff}
+.mq-quest-scenic .quest-list{display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+.module-neon .mq-quest-scenic .mq-quest-card{position:relative;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(230px,1fr);align-items:center;min-height:350px;isolation:isolate;overflow:hidden;padding:25px 28px;margin:0;border:1px solid #dc8bf2;border-radius:22px;background:radial-gradient(ellipse at 85% 80%,#74219c33,transparent 55%),linear-gradient(125deg,#2b133cfa,#170e29f5);box-shadow:inset 0 0 17px #b346c944,0 0 8px #df7ef27a,0 0 24px #b83bd52b}
+.mq-quest-card:before{content:"";position:absolute;left:4%;right:4%;height:2px;top:0;background:linear-gradient(90deg,transparent,#ffccff,transparent);box-shadow:0 0 12px #f48cff;pointer-events:none}
+.mq-quest-card:after{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(#ba4be509 1px,transparent 1px),linear-gradient(90deg,#ba4be509 1px,transparent 1px);background-size:34px 34px;mask-image:linear-gradient(90deg,transparent,#000);pointer-events:none}
+.mq-quest-copy{position:relative;z-index:1;min-width:0}
+.mq-quest-copy>.eyebrow{font-size:12px;color:#deb1f0;margin-bottom:10px;letter-spacing:.5px}
+.module-neon .mq-quest-copy h3{font-size:clamp(22px,2.1vw,30px);line-height:1.45;margin:0 0 18px;color:#fff;text-shadow:0 0 12px #bf69da66;overflow-wrap:anywhere}
+.mq-quest-copy h3:after{content:" ///";color:#ce6af0;font-style:italic;white-space:nowrap}
+.module-neon .mq-quest-copy h4{font-size:13px;margin:15px 0 4px;color:#f3e5fc}
+.module-neon .mq-quest-copy p{font-size:13px;line-height:1.8;margin:0 0 7px;color:#e2cbea}
+.mq-quest-copy>.tag{margin-top:10px;padding:7px 12px;background:#461e58;color:#ecd5f6;border:1px solid #a36cba;border-radius:9px;font-size:12px}
+.mq-quest-copy>.bar{max-width:340px;margin:12px 0;height:3px;background:#593164}.mq-quest-copy>.bar i{height:3px;background:linear-gradient(90deg,#b151dc,#ffb4f1);box-shadow:0 0 8px #df68ed}
+.mq-quest-copy>.actions{margin:15px 0 0;gap:8px}.mq-quest-copy>.actions button{font-size:12px;padding:9px 14px}
+.mq-quest-art{margin:0;min-width:0;align-self:stretch;display:grid;align-items:center;pointer-events:none}
+.mq-quest-art img{display:block;width:100%;height:auto;max-height:410px;object-fit:contain;mix-blend-mode:screen;mask-image:radial-gradient(ellipse 65% 65% at center,#000 55%,transparent 100%)}
+@media(min-width:1600px){.module-neon .mq-quest-scenic .mq-quest-card{grid-template-columns:minmax(0,1.6fr) minmax(300px,1fr)}}
+@media(max-width:800px){.module-neon .mq-quest-scenic .quest-banner{gap:18px;padding:18px}.mq-quest-scenic .quest-banner h2{padding-right:18px;font-size:38px}.module-neon .mq-quest-scenic .mq-quest-card{grid-template-columns:minmax(0,1.3fr) minmax(180px,1fr);padding:22px;min-height:320px}}
+@media(max-width:580px){.module-neon .mq-quest-scenic .quest-banner{display:block}.mq-quest-scenic .quest-banner h2{border:0;padding:0;margin:0 0 12px}.module-neon .mq-quest-scenic .mq-quest-card{grid-template-columns:minmax(0,1fr);padding:22px 18px;gap:5px}.mq-quest-art{grid-row:1;max-height:220px}.mq-quest-art img{height:220px;width:100%}.mq-quest-scenic>.actions.filters{gap:7px}.mq-quest-scenic>.actions.filters button{padding:8px 13px;font-size:12px}.module-neon .mq-quest-copy h3{font-size:23px}.mq-quest-copy>.bar{max-width:none}}

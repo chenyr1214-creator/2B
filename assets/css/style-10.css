@@ -1,0 +1,7 @@
+
+.module-neon .neon-anatomy-body .linked-muscle-light{pointer-events:none;isolation:isolate}
+.module-neon .neon-anatomy-body .linked-muscle-halo path{fill:#ff8c6d;fill-opacity:.85;stroke:none;pointer-events:none}
+.module-neon .neon-anatomy-body .linked-muscle-core path{fill:url(#muscle-focus-color);fill-opacity:.72;stroke:none;pointer-events:none;mix-blend-mode:screen}
+.module-neon .interactive-anatomy .map-current{color:#ffe0b8;border:1px solid #d77caa88;border-radius:12px;background:#452039;padding:10px 12px;line-height:1.5}
+.module-neon .interactive-anatomy .map-current:before{content:'●';color:#ffa982;font-size:10px;margin-right:8px;text-shadow:0 0 7px #ff846e}
+

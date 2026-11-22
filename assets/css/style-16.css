@@ -1,0 +1,17 @@
+
+.module-neon .split.mq-top-browser{display:flex!important;flex-direction:column!important;gap:18px;min-width:0}
+.mq-top-browser>.mq-browser-controls{min-width:0;padding:16px;border:1px solid #ae64c9;border-radius:18px;background:linear-gradient(125deg,#351846,#1c102b);box-shadow:inset 0 0 18px #c263dd20}
+.mq-browser-controls label{display:block;font-size:12px;color:#dfb9ee;margin-bottom:8px}
+.mq-browser-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:8px;align-items:center}
+.mq-browser-row select{min-width:0;width:100%;height:46px;padding:8px 12px;border:1px solid #aa6bc2;border-radius:10px;background:#2d163d;color:#f8edff;font:inherit;font-size:15px;text-overflow:ellipsis}
+.mq-browser-row select option{background:#281534;color:#f8edff}
+.mq-browser-row button{min-height:46px;padding:8px 14px!important;font-size:13px!important;white-space:nowrap;color:#f3e2ff}
+.mq-browser-row button:disabled{opacity:.35;cursor:default}
+.mq-browser-controls details{margin-top:12px}.mq-browser-controls summary{font-size:12px;color:#e3b7f3;padding:5px 0;width:fit-content}
+.mq-browser-search{width:100%;margin:10px 0;padding:10px 12px;border:1px solid #9160a8;border-radius:9px;background:#1d112b;color:#f8edff;font:inherit;font-size:13px}
+.module-neon .mq-top-browser .item-list{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(155px,1fr))!important;gap:7px!important;max-height:210px!important;overflow-y:auto!important;padding:9px!important;overscroll-behavior:contain;scrollbar-color:#b875cd #291334}
+.module-neon .mq-top-browser .item-list>button{min-width:0;min-height:44px;padding:9px 11px;font-size:13px;line-height:1.4;overflow-wrap:anywhere}
+.module-neon .mq-top-browser .item-list>button[hidden]{display:none!important}
+.mq-top-browser>.detail{min-width:0;width:100%;margin:0;scroll-margin-top:16px}
+.mq-browser-empty{font-size:12px;color:#dbb5e9;margin:10px 0}
+@media(max-width:600px){.mq-top-browser>.mq-browser-controls{padding:12px}.mq-browser-row{grid-template-columns:minmax(0,1fr) auto auto;gap:5px}.mq-browser-row select{font-size:13px;padding:8px}.mq-browser-row button{padding:8px!important;font-size:12px!important}.module-neon .mq-top-browser .item-list{grid-template-columns:repeat(2,minmax(0,1fr))!important;max-height:190px!important}.module-neon .mq-top-browser .item-list>button{font-size:12px}}

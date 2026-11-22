@@ -1,0 +1,66 @@
+
+/* The six remaining modules inherit the survival shell. Content and handlers stay intact. */
+.module-neon{color-scheme:dark}
+.module-neon .page-title{margin-bottom:25px}
+.module-neon .page-title h1{color:#fff;font-size:clamp(26px,3vw,39px);text-shadow:0 0 14px #ec6aff66;letter-spacing:-.7px}
+.module-neon .page-title h1:after{content:' ///';color:#d276e9;font-style:italic;letter-spacing:-5px;margin-left:12px}
+.module-neon .page-title p,.module-neon .breadcrumb,.module-neon .muted{color:#cba8dd}
+.module-neon main button{color:#f5e5ff;border-color:#86519f}
+.module-neon main button:hover{background:#653079;border-color:#df88f5}
+.module-neon main button.active,.module-neon main button.chosen,.module-neon main button[aria-pressed=true]{background:#6d2e88;color:#fff;border-color:#ed9fff;box-shadow:inset 0 0 12px #df72fa44}
+.module-neon :is(.anatomy,.equipment-visual,.equipment-picture,.animation,.movement-player,.sport-demo,.sport-walkthrough,.sport-quiz,.sport-feedback,.sport-step-picture,.sport-scene-hero,.guide-unavailable,.guide-variant-status,.equipment-usage,.guide-image-reference,.map-current){background:linear-gradient(135deg,#2d163d,#170d25);color:#f1deff;border-color:#8950a3;border-radius:18px}
+.module-neon :is(.detail,.sport-card,.quest-row,.achievement,.stats>div,.item-list,.steps,.passport-cover,.quest-banner){background:radial-gradient(ellipse at 90% 0,#79309633,transparent 65%),linear-gradient(130deg,#311641ee,#1b0e2bee);border:1px solid #b65bd1;border-radius:18px;box-shadow:inset 0 0 15px #ce4aeb30,0 0 10px #b83bda25;color:#f4e5ff}
+.module-neon .sport-card:hover{background:linear-gradient(135deg,#512163,#291436);border-color:#f391ff;box-shadow:0 0 16px #ce53ef66}
+.module-neon .item-list{padding:12px}
+.module-neon .item-list button{border-radius:10px;white-space:normal;line-height:1.5;background:transparent}
+.module-neon .item-list button.chosen{background:linear-gradient(120deg,#73318d,#462052);box-shadow:0 0 9px #d75bf044}
+.module-neon .search,.module-neon input,.module-neon textarea,.module-neon select{background:#21112f;color:#f6e7ff;border:1px solid #9c59b2;border-radius:10px}
+.module-neon input::placeholder,.module-neon textarea::placeholder{color:#b493c7}
+.module-neon :is(.stats strong,.passport-seal,.quest-symbol){color:#edafff}
+.module-neon .passport-cover{padding:28px;background:radial-gradient(ellipse at 85% 50%,#8b369877,transparent 60%),linear-gradient(120deg,#3b174c,#1a0d28);border-color:#e27afb;box-shadow:inset 0 0 22px #c64bdf33,0 0 13px #c84cde44}
+.module-neon .passport-cover p,.module-neon .passport-cover .eyebrow{color:#ddbbea}
+.module-neon .passport-seal{border-color:#c877e3;text-shadow:0 0 16px #d476ef88;background:#48215d55}
+.module-neon .bar,.module-neon .demo-timeline{background:#4e2c60}.module-neon .bar i{background:linear-gradient(90deg,#b740df,#f5b3ff)}
+.module-neon .tag{background:#5e2b7544;color:#efc9ff;border-color:#9e59b5}
+.module-neon :is(.relation-row,.check-line,.content-reference){border-color:#71428a;color:#d3b4e2}
+.module-neon :is(.detail,.sport-card,.quest-row,.achievement,.stats)>:is(h2,h3,h4){color:#faeeff}
+.module-neon .steps li,.module-neon .steps li:before{border-color:#88509e;color:#e1c8ee;background-color:transparent}
+.module-neon .quest-row p,.module-neon .sport-card p,.module-neon .stats div,.module-neon .achievement small{color:#d6b6e6}
+.module-neon main a{color:#eeb8ff}
+.module-neon .success,.module-neon .sport-feedback strong{color:#baf0d7}
+.module-neon .form-error{color:#ffc1e2}
+.module-neon .quiz-picked{outline:1px solid #f6c2ff}
+.module-neon .sport-disclaimer,.module-neon .demo-caption,.module-neon .demo-label{color:#c1a0d2;background:#261333}
+.module-neon .equipment-guide-steps article,.module-neon .sport-demo-notes{background:#2a1538;border-color:#87539d;color:#dcc2e9;border-radius:12px}
+.module-neon .muscle-tabs button{color:#e9cfff;background:#2c173c;border-color:#87509f}
+@media(max-width:600px){.module-neon .page-title h1{font-size:27px}.module-neon .passport-cover{padding:20px}.module-neon .quest-row{padding:16px}.module-neon .stats{gap:10px}}
+
+/* v18: readable default states; no pale chips underneath pale text. */
+.module-neon main .chip{
+ background:linear-gradient(135deg,#472154,#291536);
+ color:#f1ddfc;border:1px solid #aa64c0;
+ border-radius:30px;line-height:1.5;white-space:normal;
+ box-shadow:inset 0 0 7px #b958d522;
+}
+.module-neon main .chip:hover,.module-neon main .chip:focus-visible{
+ background:#713389;color:#fff;border-color:#edacff;
+}
+.module-neon main .relation-row label{
+ color:#dcb4ef;font-size:12px;font-weight:600;line-height:1.6;
+}
+.module-neon main :is(h3,h4,label){color:#ecd8f8}
+.module-neon main :is(.equipment-demo-choices,.equipment-guide-steps){
+ background:linear-gradient(135deg,#30183f,#20102d);color:#e6cfee;border-color:#8951a2;
+}
+.module-neon main .content-reference summary{color:#d9afea}
+.module-neon main .guide-image-reference,.module-neon main .guide-unavailable{color:#d1b1e1!important}
+.module-neon main .sport-disclaimer{color:#c7a9d9!important}
+.module-neon main .sport-scene-hero figcaption{background:#23122f;color:#d3b6e3;border-color:#72418b}
+.module-neon main .sport-demo-notes{color:#dcc2eb}
+.survival-neon dialog{background:#251333;color:#f2dfff;border:1px solid #b46ad0;border-radius:18px}
+.survival-neon dialog :is(input,select,textarea){background:#321b41;color:#f2dfff;border-color:#9a5eb2}
+.module-neon main button.checked,.module-neon main button.checked:hover{
+ background:linear-gradient(135deg,#623077,#3d2050);color:#f1ddfc;border-color:#c588dd;
+}
+.module-neon main .steps strong,.module-neon main .steps b{color:#d6a1eb}
+

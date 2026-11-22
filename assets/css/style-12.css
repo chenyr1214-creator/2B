@@ -1,0 +1,36 @@
+
+.sports-neon-page .sport-experience .sport-guide-neon{position:relative;overflow:hidden;border:1px solid #ce7ae5;border-radius:24px;padding:28px;background:radial-gradient(ellipse at 80% 0,#72268b33,transparent 60%),linear-gradient(135deg,#241032,#140c22);box-shadow:inset 0 0 24px #c955e91c,0 0 20px #c54deb24}
+.sports-neon-page .sport-guide-neon::before{content:'';position:absolute;top:0;left:28px;width:110px;height:2px;background:#f5baff;box-shadow:0 0 10px 3px #d753f6}
+.sports-neon-page .sport-guide-neon>.eyebrow{color:#e4a5f5;letter-spacing:.08em;font-size:12px}
+.sports-neon-page .sport-guide-neon>h3{color:#fff0ff;margin:12px 0 22px;font-size:clamp(22px,2vw,30px);text-shadow:0 0 14px #d35df350}
+.sports-neon-page .sport-guide-progress{display:flex;gap:10px;margin-bottom:24px}
+.sports-neon-page .sport-guide-stop{display:flex;align-items:center;gap:9px;flex:1;min-width:0;padding:12px;border:1px solid #6e3a85;border-radius:13px;background:#24132f;color:#c6a0d4;font:inherit;font-size:12px;line-height:1.5;text-align:left;cursor:pointer;overflow-wrap:anywhere}
+.sports-neon-page .sport-guide-stop-number{display:grid;place-items:center;flex-shrink:0;width:29px;height:29px;border:1px solid #8b4ca5;border-radius:50%;font-size:11px;font-weight:800}
+.sports-neon-page .sport-guide-stop.is-current{color:#fff0ff;border-color:#efadff;background:linear-gradient(135deg,#6a2e7e,#351a49);box-shadow:0 0 13px #c65be244}
+.sports-neon-page .sport-guide-stop.is-current .sport-guide-stop-number{color:#fff6ff;border-color:#ffccfa;background:#9044aa;box-shadow:0 0 10px #d158f455}
+.sports-neon-page .sport-guide-stop.is-past{color:#e1b7ee;border-color:#a369bb}
+.sports-neon-page .sport-guide-neon .sport-step-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:center}
+.sports-neon-page .sport-guide-neon .sport-step-picture{border:1px solid #7d4394;border-radius:18px;overflow:hidden;background:#170d29;box-shadow:inset 0 0 18px #a936c322}
+.sports-neon-page .sport-guide-scene-label{display:flex;justify-content:space-between;gap:12px;padding:13px 16px;color:#d39be7;font-size:10px;letter-spacing:.07em;background:#261432;border-bottom:1px solid #613175}
+.sports-neon-page .sport-guide-neon .sport-step-picture svg{background:#170d29;max-height:none;display:block;width:100%;height:auto}
+.sports-neon-page .sport-guide-vector{filter:drop-shadow(0 0 3px #d46af477)}
+.sports-neon-page .sport-guide-vector text{fill:#f2cff9}
+.sports-neon-page .sport-guide-neon .sport-step-grid h4{color:#fff0ff;font-size:23px;line-height:1.4;margin:16px 0 12px}
+.sports-neon-page .sport-guide-neon .sport-step-grid p{color:#d9bce6;font-size:15px;line-height:1.85}
+.sports-neon-page .sport-guide-neon .sport-step-grid .tag{color:#f3c4ff;background:#4d245f;border:1px solid #a365ba}
+.sports-neon-page .sport-experience :is(.sport-demo,.sport-quiz){border-radius:22px;border-color:#a75fc1;background:linear-gradient(135deg,#2c153c,#190f28);color:#f5e3ff;padding:25px}
+.sports-neon-page .sport-experience .sport-demo>svg{background:#170d29;border:1px solid #75418c;border-radius:16px}
+.sports-neon-page .sport-experience .sport-demo-notes{color:#d7b8e5;font-size:13px}
+.sports-neon-page .sport-experience .sport-disclaimer{color:#c2a0d2!important}
+.sports-neon-page .sport-experience .actions{gap:10px;flex-wrap:wrap}
+.sports-neon-page .sport-experience button:not(.sport-guide-stop){border:1px solid #aa6bc0;border-radius:12px;background:#362043;color:#f6e5ff;min-height:42px;padding:10px 17px;line-height:1.5;white-space:normal;cursor:pointer}
+.sports-neon-page .sport-experience button:not(:disabled):hover{border-color:#f3b8ff;background:#5b2a6d;box-shadow:0 0 12px #be53df44}
+.sports-neon-page .sport-experience button:focus-visible{outline:2px solid #ffd9a1;outline-offset:3px}
+.sports-neon-page .sport-experience button.primary{background:linear-gradient(135deg,#8a3da1,#52256a);border-color:#df94f5}
+.sports-neon-page .sport-experience button:disabled{opacity:.35;cursor:default}
+.sports-neon-page .sport-quiz .answer{display:block;width:100%;text-align:left;margin-top:10px}
+.sports-neon-page .sport-quiz .answer.quiz-picked{background:#633176;border-color:#edb9ff;color:#fff0ff}
+.sports-neon-page .sport-feedback{background:#35213e;color:#f3daff;padding:18px;border:1px solid #8b5a9f;border-radius:14px}
+@media(max-width:1000px){.sports-neon-page .sport-guide-neon .sport-step-grid{grid-template-columns:1fr}.sports-neon-page .sport-guide-progress{flex-wrap:wrap}.sports-neon-page .sport-guide-stop{flex-basis:40%}}
+@media(max-width:600px){.sports-neon-page .sport-experience .sport-guide-neon,.sports-neon-page .sport-experience :is(.sport-demo,.sport-quiz){padding:17px}.sports-neon-page .sport-guide-stop{flex-basis:100%}.sports-neon-page .sport-guide-neon .sport-step-grid h4{font-size:21px}.sports-neon-page .sport-guide-scene-label{letter-spacing:0;font-size:9px}}
+

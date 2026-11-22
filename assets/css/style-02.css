@@ -1,0 +1,70 @@
+
+body.neon-home{margin:0;background:#100b1c;color:#fff;overflow-x:hidden}.neon-world{min-height:100svh;display:grid;place-items:center;background:#100b1c}.neon-stage{width:100%;aspect-ratio:1508/788;position:relative;isolation:isolate;overflow:hidden;container-type:inline-size}.neon-scene{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;z-index:-2}.neon-header{position:absolute;inset:0 0 auto;height:10.1%;padding:0 1.7% 0 2.6%;display:flex;gap:1%;background:linear-gradient(180deg,#181324ed,#251633dc);border:0;color:white}.neon-brand{display:flex;align-items:center;gap:.65cqw;text-decoration:none;white-space:nowrap}.neon-brand i{font:bold italic 3cqw Arial;color:#f8d8ff;text-shadow:0 0 5px #e756ff,0 0 12px #da34f5;letter-spacing:-.65cqw;padding-right:.6cqw;transform:skew(-12deg)}.neon-brand b{font:italic 900 1.7cqw Arial;color:white;letter-spacing:-.07cqw;text-shadow:0 0 6px #ffffff70}.neon-header nav{margin-left:auto;display:flex;align-items:center;border:1px solid #eea2fa45;border-radius:40px;background:#5f3e6550;padding:.3cqw}.neon-header nav button{font-size:.9cqw;border:0;color:#fff;padding:.65cqw .85cqw;border-radius:30px;white-space:nowrap}.neon-header nav button:hover,.neon-header nav button:first-child{background:#b759bc55;box-shadow:inset 0 0 9px #f08df655}.neon-round{border:1px solid #f7caf74d;border-radius:50%;padding:0;width:2.8cqw;height:2.8cqw;color:white;font-size:2cqw;display:grid;place-items:center;background:#231a3180}.neon-wordmark{position:absolute;left:39%;top:12%;width:21%;height:20%;display:flex;align-items:center;flex-direction:column;justify-content:center;background:radial-gradient(ellipse,#332350 45%,#34214d00 75%);pointer-events:none}.neon-wordmark i{font:italic 900 6cqw Arial;line-height:.95;letter-spacing:-1.3cqw;padding-right:1.5cqw;color:#e9b4ff;text-shadow:0 0 10px #bc35eb,0 0 25px #9b28de;transform:skew(-15deg)}.neon-wordmark strong{font:italic 900 2.65cqw Arial;letter-spacing:-.1cqw;text-shadow:0 0 8px #f1d8ff}.neon-wordmark>span{font:italic bold 1.1cqw Arial;color:#fa83f1;text-shadow:0 0 5px #e241ef;white-space:nowrap}.neon-portal{position:absolute;display:flex;align-items:center;gap:1.15cqw;text-align:left;border:1.5px solid #ffb5ff;border-radius:2cqw;color:#fff;padding:1cqw 1.3cqw;background:linear-gradient(115deg,#562460ed,#271431f5);box-shadow:inset 0 0 10px #f979ffad,0 0 6px #ff97ff,0 0 16px #f91bf5;transition:transform .2s,box-shadow .2s;min-width:0}.neon-portal:hover{transform:translateY(-3px);background:linear-gradient(115deg,#77327a,#352045);box-shadow:inset 0 0 14px #fcacff,0 0 12px #ff9fff,0 0 28px #f91bf5}.neon-portal:focus-visible,.neon-header button:focus-visible,.neon-passport:focus-visible{outline:3px solid #fff;outline-offset:5px}.neon-icon{color:#ed9bf0;font:3.4cqw Arial;line-height:1;width:3.6cqw;flex-shrink:0;text-align:center;text-shadow:0 0 8px #f486ff}.neon-copy{display:flex;flex-direction:column;gap:.45cqw;min-width:0}.neon-copy strong{font-size:1.45cqw;line-height:1.3;white-space:nowrap;letter-spacing:-.04cqw;text-shadow:0 0 4px #ffffff66}.neon-copy small{font-size:.94cqw;color:#eee2f4;white-space:nowrap}.neon-arrow{margin-left:auto;border:1px solid #edb8ed;border-radius:50%;font:1.4cqw Arial;width:1.8cqw;height:1.8cqw;display:grid;place-items:center;color:#f3c5f4;align-self:flex-end;flex-shrink:0}.portal-gym{left:22.2%;top:33.1%;width:16.8%;height:10.7%}.portal-muscle{left:4.6%;top:56%;width:17.4%;height:10.8%}.portal-equipment{left:25.9%;top:60.1%;width:14.4%;height:10.5%;gap:.6cqw;padding:.8cqw}.portal-equipment .neon-icon{width:2.5cqw}.portal-equipment strong{font-size:1.32cqw}.portal-equipment .neon-arrow{position:absolute;right:.6cqw;bottom:.7cqw}.portal-move{left:40.3%;top:37.7%;width:17.8%;height:35.2%;align-items:flex-start;padding-top:1cqw;background:linear-gradient(180deg,#382044f5 0%,#352040f5 26%,transparent 32%);gap:.8cqw}.portal-move .neon-icon{width:3.2cqw}.portal-move .neon-arrow{position:absolute;right:1.2cqw;top:5.5cqw}.portal-quest{left:68.7%;top:31.8%;width:15.7%;height:11.2%;gap:.65cqw;padding:.7cqw}.portal-quest strong{font-size:1.37cqw}.portal-quest .neon-icon{width:3.3cqw}.portal-quest .neon-arrow{position:absolute;right:.9cqw;bottom:.9cqw}.portal-sport{left:59.1%;top:60.1%;width:16.6%;height:10.6%}.portal-guide{left:83.7%;top:43.5%;width:15.4%;height:11.6%;gap:.7cqw;padding:.8cqw}.portal-guide strong{font-size:1.35cqw}.portal-guide .neon-icon{width:3.3cqw}.portal-guide .neon-arrow{position:absolute;right:.9cqw;bottom:.9cqw}.neon-passport{position:absolute;left:90.2%;top:56.2%;width:7.2%;height:12.5%;border-radius:15%;transform:skew(-15deg)}#neon-settings{background:#24162f;color:#fff;border:1px solid #ffabfa;border-radius:20px;padding:30px;box-shadow:0 0 30px #f851d96b;max-width:90vw}#neon-settings::backdrop{background:#0b0617b8;backdrop-filter:blur(7px)}#neon-settings h2{margin:0 0 24px}.neon-languages{display:flex;gap:10px}.neon-languages button,.neon-close{color:#fff;border-color:#98619c}.neon-languages button:hover,.neon-languages button[aria-pressed=true]{background:#7b3988}.neon-close{float:right;padding:0 8px;border:0;font-size:24px}#neon-settings p{font-size:12px;color:#cbb6d3;margin-top:24px}
+
+
+
+
+/* v2: replace logo artwork only; retain all layout and interaction rules. */
+.neon-brand-logo{display:block;width:14.5cqw;height:4.7cqw;object-fit:contain}.neon-main-logo{display:block;width:100%;height:100%;object-fit:contain}.neon-wordmark{background:radial-gradient(ellipse,#332350 55%,#34214d00 78%)}
+
+
+/* v5: opaque navigation conceals the complete baked-in old brand. */
+.neon-header{background:linear-gradient(180deg,#181324 0%,#251633 100%)}
+.neon-brand{flex-shrink:0;gap:.65cqw;min-width:19cqw;height:100%;background:transparent}
+.neon-mq-crop{display:block;position:relative;overflow:hidden;width:4.9cqw;height:3.5cqw;flex:none}
+.neon-mq-crop img{position:absolute;width:9.3cqw;height:auto;max-width:none;left:-1.95cqw;top:-.65cqw}
+.neon-brand-name{font:italic 900 1.7cqw Arial,sans-serif;letter-spacing:-.07cqw;color:#fff;text-shadow:0 0 5px #dba8ff80;white-space:nowrap}
+/* Each part owns its column, so text can never sit underneath the arrow. */
+.portal-gym{display:grid;grid-template-columns:2.7cqw minmax(0,1fr) 1.7cqw;gap:.55cqw;padding:.7cqw .85cqw;align-items:center}
+.portal-gym .neon-icon{width:2.7cqw;font-size:2.8cqw}
+.portal-gym .neon-copy{min-width:0;gap:.45cqw}
+.portal-gym .neon-copy strong{font-size:1.25cqw;line-height:1.25;white-space:normal;overflow-wrap:anywhere}
+.portal-gym .neon-copy small{font-size:.78cqw;line-height:1.4;white-space:normal;overflow-wrap:anywhere;word-break:keep-all}
+.portal-gym .neon-arrow{position:static;margin:0;width:1.7cqw;height:1.7cqw;font-size:1.3cqw;align-self:center;justify-self:end}
+
+
+/* v6: display the supplied header logo as-is; replace the entire old lockup. */
+.neon-header-exact-logo{display:block;width:19cqw;height:auto;max-height:100%;object-fit:contain}
+
+
+/* v8: consistent three-column portals in every locale. */
+.neon-portal,
+.neon-portal.portal-gym{
+ display:grid;
+ grid-template-columns:2.35cqw minmax(0,1fr) 1.55cqw;
+ column-gap:.55cqw;
+ padding:.65cqw .8cqw;
+ align-items:center;
+ align-content:center;
+ overflow:hidden;
+}
+.neon-portal .neon-icon,
+.neon-portal.portal-gym .neon-icon{
+ width:2.35cqw;font-size:2.65cqw;line-height:1;text-align:center;
+}
+.neon-portal .neon-copy,
+.neon-portal.portal-gym .neon-copy{
+ display:flex;flex-direction:column;min-width:0;max-width:100%;gap:.3cqw;
+}
+.neon-portal .neon-copy strong,
+.neon-portal.portal-gym .neon-copy strong{
+ font-size:1.12cqw;line-height:1.3;letter-spacing:-.025cqw;
+ white-space:normal;word-break:normal;overflow-wrap:anywhere;
+}
+.neon-portal .neon-copy small,
+.neon-portal.portal-gym .neon-copy small{
+ font-size:.73cqw;line-height:1.4;white-space:normal;
+ word-break:normal;overflow-wrap:anywhere;
+}
+.neon-portal .neon-arrow,
+.neon-portal.portal-gym .neon-arrow{
+ position:static;inset:auto;margin:0;width:1.55cqw;height:1.55cqw;
+ font-size:1.12cqw;line-height:1;align-self:center;justify-self:end;
+}
+.neon-portal.portal-move{align-content:start;padding-top:.85cqw}
+/* Keep navigation labels on one line at a smaller, consistent scale. */
+.neon-header nav{min-width:0}
+.neon-header nav button{font-size:.76cqw;padding:.62cqw .65cqw;line-height:1.35}
+
+
+

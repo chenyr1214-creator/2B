@@ -1,0 +1,13 @@
+/* Home page only: one HTML label/frame, clean background, retained hover. */
+.neon-stage .neon-portal{background:linear-gradient(115deg,#492052,#281431);transition:transform .22s ease,filter .22s ease,box-shadow .22s ease;transform-origin:center center}
+.neon-stage .portal-move{background:linear-gradient(180deg,#382044 0%,#352040 26%,transparent 32%)}
+@media(hover:hover) and (pointer:fine){.neon-stage .neon-portal:hover{transform:translateY(-2px) scale(1.025);filter:brightness(1.08);z-index:3}}
+.neon-stage .neon-portal:active{transform:scale(.985)}
+@media(min-width:701px) and (min-aspect-ratio:4/5){
+ .neon-stage{--mq-cover-offset:clamp(12px,2.8svh,40px);height:max(100svh,calc(52.254642vw + var(--mq-cover-offset)))}
+ .neon-stage>.neon-scene{top:var(--mq-cover-offset)}
+ .neon-stage:after{top:calc(52.254642vw + var(--mq-cover-offset))}
+ .neon-stage>.neon-portal,.neon-stage>.neon-passport{translate:0 var(--mq-cover-offset)}
+ .neon-stage .neon-header{height:calc(5.3vw + var(--mq-cover-offset));min-height:calc(48px + var(--mq-cover-offset));max-height:calc(106px + var(--mq-cover-offset))}
+}
+@media(prefers-reduced-motion:reduce){.neon-stage .neon-portal{transition:none}}

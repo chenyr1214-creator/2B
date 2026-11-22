@@ -1,0 +1,11 @@
+
+.module-neon .motion-real3d{padding:0;background:#1e102a;overflow:hidden;border-radius:20px;border:1px solid #a263be}
+.motion3d-stage{min-height:440px;aspect-ratio:1.4}
+.motion3d-timeline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:12px 14px 0}
+.module-neon .motion3d-timeline button{padding:10px 7px;background:#30183f;color:#d6b4e6;border:1px solid #784590;border-radius:10px;font-size:11px;line-height:1.4}
+.module-neon .motion3d-timeline button.current{background:linear-gradient(120deg,#6f2b89,#482057);border-color:#eba2fc;color:#fff;box-shadow:inset 0 0 10px #ef9fff33}
+.motion3d-scrub{padding:8px 15px 5px}.motion3d-scrub input{width:100%;accent-color:#dc8bf7;cursor:pointer;min-height:24px;background:transparent;border:0}
+.module-neon .motion-real3d select{padding:7px 9px;font-size:11px;background:#341d44;color:#efdafa;border:1px solid #9155a8;border-radius:8px}
+.module-neon .motion-real3d .motion3d-caption{padding:11px 16px;margin:0;color:#c9a6d9;font-size:11px;line-height:1.7;background:#24122f}
+@media(max-width:600px){.motion3d-stage{min-height:340px;aspect-ratio:1/1}.motion3d-timeline{gap:5px;padding:10px 9px 0}.module-neon .motion3d-timeline button{font-size:10px;padding:9px 4px}.motion-real3d .eq3d-controls{flex-direction:column}}
+

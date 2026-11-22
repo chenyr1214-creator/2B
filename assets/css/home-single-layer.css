@@ -11,3 +11,32 @@
  .neon-stage .neon-header{height:calc(5.3vw + var(--mq-cover-offset));min-height:calc(48px + var(--mq-cover-offset));max-height:calc(106px + var(--mq-cover-offset))}
 }
 @media(prefers-reduced-motion:reduce){.neon-stage .neon-portal{transition:none}}
+
+/* Portrait home: one readable set of entrances, integrated with the cover. */
+@media(max-width:700px), (max-aspect-ratio:4/5){
+ body.neon-home .neon-world{display:block;min-height:100svh;padding:0;background:#160c26}
+ body.neon-home .neon-world:before{display:none}
+ body.neon-home .mobile-explore{display:none!important}
+ body.neon-home .neon-stage{width:100%;height:auto;min-height:100svh;aspect-ratio:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-content:start;gap:18px;padding:0 24px 40px;box-sizing:border-box;background:#160c26}
+ body.neon-home .neon-stage>.neon-scene{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.32;z-index:-2}
+ body.neon-home .neon-stage:after{display:none}
+ body.neon-home .neon-stage .neon-header{position:relative;inset:auto;grid-column:1/-1;width:auto;height:auto;min-height:0;max-height:none;margin:0 -24px 200px;padding:24px;display:flex;flex-wrap:wrap;gap:18px;background:#181023f5;align-items:center}
+ body.neon-home .neon-brand{min-width:0;margin-right:auto}
+ body.neon-home .neon-header-exact-logo{width:220px;max-width:55vw;height:auto}
+ body.neon-home .neon-round{width:40px;height:40px;font-size:25px;flex-shrink:0}
+ body.neon-home .neon-header nav{order:4;flex:0 0 100%;width:100%;min-width:0;overflow-x:auto;justify-content:flex-start;border-radius:12px;padding:5px;margin:0}
+ body.neon-home .neon-header nav button{font-size:14px;padding:12px 15px;flex-shrink:0}
+ body.neon-home .neon-stage>.neon-portal{position:relative;inset:auto;translate:none;width:100%;height:auto;min-height:112px;aspect-ratio:auto;grid-column:auto;grid-row:auto;display:grid;grid-template-columns:36px minmax(0,1fr) 26px;gap:12px;padding:20px 16px;border-radius:20px;align-content:center;background:linear-gradient(115deg,#492052f5,#281431f5);box-sizing:border-box}
+ body.neon-home .neon-stage .neon-portal .neon-icon{width:36px;font-size:36px}
+ body.neon-home .neon-stage .neon-portal .neon-copy{gap:7px}
+ body.neon-home .neon-stage .neon-portal .neon-copy strong{font-size:20px;white-space:normal;line-height:1.4;letter-spacing:0}
+ body.neon-home .neon-stage .neon-portal .neon-copy small{font-size:13px;white-space:normal;line-height:1.5}
+ body.neon-home .neon-stage .neon-portal .neon-arrow{position:static;inset:auto;width:26px;height:26px;font-size:21px;align-self:center}
+ body.neon-home .neon-stage>.portal-guide{grid-column:1/-1}
+ body.neon-home .neon-stage>.neon-passport{display:none}
+}
+@media(max-width:540px){
+ body.neon-home .neon-stage{grid-template-columns:minmax(0,1fr);padding-left:18px;padding-right:18px;gap:14px}
+ body.neon-home .neon-stage .neon-header{margin-left:-18px;margin-right:-18px;margin-bottom:120px;padding:18px;gap:12px}
+ body.neon-home .neon-stage>.neon-portal{min-height:98px}
+}
